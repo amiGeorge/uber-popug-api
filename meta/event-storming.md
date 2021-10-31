@@ -33,7 +33,7 @@
 - Actor - User (any role)
 - Command - Mark task as completed
 - Data - user, task public id
-- Event - Task.StatusChanged
+- Event - TaskCompleted
 
 ### Бухгалтерия
 
@@ -60,7 +60,7 @@
 
 **Начислить completed fee на счет сотрудника**
 
-- Actor - Task.StatusChanged
+- Actor - TaskCompleted
 - Command - Debit user account for task completed fee
 - Data - task public id, user public id
 - Event - ???
